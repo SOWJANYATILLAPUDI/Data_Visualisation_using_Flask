@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pie Chart</title>
+</head>
+<body>
+    <h1>Pie Chart</h1>
+    {% for chart in pie_charts %}
+    <div class="chart-container">
+        <!-- Each pie chart will be displayed dynamically -->
+        {{ chart | safe }}
+    </div>
+    {% endfor %}
+</body>
+</html>
